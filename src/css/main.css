@@ -1,0 +1,1112 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    height: fit-content;
+    background-color: rgb(77, 75, 75);
+    overflow-y: auto;
+}
+
+.navigation {
+    width: 10vw;
+    height: fit-content;
+}
+
+.year-selector {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-select {
+    width: 70px;
+    height: 25px;
+    font-size: 16px;
+}
+
+.search {
+    font-size: 16px;
+}
+
+.loading {
+    color: coral;
+}
+
+.loading-div {
+    padding-left: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10vw;
+    border-top: 1px solid black;
+}
+
+.nav-link a {
+    display: block;
+    background-color: rgb(77, 75, 75);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    text-align: center;
+    width: 10vw;
+}
+
+.nav-link a:hover {
+    color: rgb(241, 10, 10);
+}
+
+.nav-link a:active {
+    background-color: rgb(55, 55, 55);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.devider-logo {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    background-color: rgb(114, 114, 114);
+    width: 100%;
+    padding: 1px 5px;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: brown;
+
+}
+
+.breadcrumb-item {
+    list-style: none;
+}
+
+.breadcrumb-item a:hover {
+    color: rgb(241, 10, 10);
+}
+
+.breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+.top-level-background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(114, 114, 114);
+    width: 100%;
+    height: fit-content;
+}
+
+.background-details {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(114, 114, 114);
+    width: 100%;
+    height: fit-content;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 10px;
+    font-size: 35px;
+}
+
+.title-small {
+    background-color: lightgrey;
+    text-shadow: 2px 2px 8px white;
+    border-radius: 5px 5px 0 0;
+    color: rgb(65, 64, 64);
+    font-size: 16px;
+}
+
+.table {
+    padding: 5px 10px;
+    margin: 0 10px;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+}
+
+.table tr {
+    height: 30px;
+}
+
+.table th {
+    background-image: linear-gradient(#dedede, #c9c6c6);
+    text-align: left;
+    padding: 8px;
+}
+
+.table td {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.table-race {
+    padding: 5px 10px;
+    margin: 0 10px;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+}
+
+.table-race tr {
+    height: 30px;
+}
+
+.table-race th {
+    background-image: linear-gradient(#dedede, #c9c6c6);
+    text-align: left;
+    padding: 8px;
+}
+
+.race-th th,
+.subtitle-details th {
+    background-color: lightgrey;
+    text-shadow: 2px 2px 8px white;
+    color: rgb(65, 64, 64);
+    font-size: 15px;
+}
+
+.table-race td {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.table-container {
+    display: flex;
+    width: 100%;
+}
+
+.table-small-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 20%;
+    height: fit-content;
+    background-color: rgb(77, 75, 75);
+}
+
+.table-small {
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+
+.master {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 10px 5px;
+}
+
+.master-race {
+    display: flex;
+    width: 100%;
+}
+
+.table-small th,
+.table-small td {
+    text-align: left;
+    padding: 4px 15px;
+    white-space: nowrap;
+}
+
+.table-small-header {
+    font-size: 18px;
+    text-align: center !important;
+}
+
+.table-details,
+.table-details-race {
+    padding: 2px;
+    margin: 2px;
+    width: 100%;
+    height: fit-content;
+}
+
+.table-details tr {
+    height: 30px;
+}
+
+.table-details th {
+    background-image: linear-gradient(#dedede, #c9c6c6);
+    text-align: left;
+    padding: 8px;
+}
+
+.table-details td {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.flag-container {
+    display: flex;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.flag-text {
+    display: flex;
+    align-items: center;
+
+}
+
+.title-small-race th {
+    font-size: 16px;
+    color: rgb(65, 64, 64);
+}
+
+.table-details-race th {
+    background-image: linear-gradient(#dedede, #c9c6c6);
+    text-align: left;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+.table-details-race td {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+    padding: 5px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.img-div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.img-div img {
+    width: 220px;
+}
+
+.flag-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-top: 15px;
+}
+
+.name-div {
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 12vw;
+}
+
+.logo-img {
+    width: 8vw;
+    margin-bottom: 1px;
+    margin-left: 1px;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: auto;
+    padding: 10px;
+}
+
+.home-img img {
+    width: 75%;
+    object-fit: cover;
+}
+
+.main-container {
+    width: 10vw;
+}
+
+.flag-raceDetails {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.flag-raceDetails span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* media query max-width 1360px */
+@media screen and (max-width:1360px) {
+    .main {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .top-level-background {
+        height: fit-content;
+    }
+
+    .home-img {
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .home-img img {
+        width: 100%;
+    }
+
+    .breadcrumb {
+        width: 100%;
+        padding: 1px 5px;
+        margin-top: 0;
+    }
+
+    .breadcrumb a {
+        font-size: 15px;
+    }
+
+    .search {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .year-selector {
+        height: fit-content;
+    }
+
+    .year-select {
+        width: 60px;
+        height: 20px;
+        font-size: 14px;
+    }
+
+    .main-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo-img {
+        padding-top: 3px;
+    }
+
+    .background {
+        padding: 0;
+        margin: 0;
+    }
+
+    .table-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .nav-list {
+        display: flex;
+        width: 100%;
+        border-top: none;
+    }
+
+    .devider-logo {
+        padding-bottom: 0;
+    }
+
+    .devider-links {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .nav-link {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-link a {
+        font-size: 18px;
+        padding: 5px 10px;
+        border-bottom: none;
+    }
+
+    .background-details {
+        padding: 0;
+        margin: 0;
+    }
+
+    .table {
+        padding: 4px;
+        margin: 2px;
+    }
+
+    .table td {
+        font-size: 14px;
+        padding: 3px 5px;
+    }
+
+    .table tr {
+        height: fit-content;
+    }
+
+    .table-race {
+        padding: 4px;
+        margin: 2px;
+    }
+
+    .table-small-container {
+        width: fit-content;
+        height: fit-content;
+        border-right: none;
+    }
+
+    .table-details {
+        padding: 2px;
+        margin: 2px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .title-small {
+        font-size: 15px;
+    }
+
+    .table-details-race {
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .table-details-race td {
+        font-size: 14px;
+    }
+
+    .table-details tr,
+    .table-details-race tr {
+        height: fit-content;
+    }
+
+    .race-th th,
+    .subtitle-details th {
+        font-size: 14px;
+    }
+
+    .table-small-header {
+        font-size: 16px;
+    }
+
+    .title-small th {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .title-small td {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .flag-size {
+        width: 22px;
+        height: 22px;
+        padding-left: 3px;
+    }
+
+    .table-small-container {
+        width: 100%;
+        height: fit-content;
+        border-right: none;
+    }
+
+    .master {
+        flex-direction: row;
+    }
+
+    .large-flag {
+        width: 120px;
+        height: 120px;
+    }
+
+    .img-div {
+        padding-right: 25px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    .flag-raceDetails {
+        border-bottom: none;
+    }
+}
+
+/* media query max-width 900px */
+@media screen and (max-width:900px) {
+    .title {
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    .title-small {
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .main-container {
+        height: fit-content;
+    }
+
+    .navigation {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        border-top: none;
+    }
+
+    .nav-link a {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .breadcrumb {
+        width: 100%;
+        padding: 0 2px;
+        margin-top: 4px;
+    }
+
+    .breadcrumb a {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .search {
+        font-size: 13px;
+    }
+
+    .year-select {
+        width: 55px;
+        height: 18px;
+        font-size: 13px;
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-right: none;
+        align-items: center;
+    }
+
+    .table td {
+        font-size: 13px;
+        padding: 3px 5px;
+    }
+
+    .table {
+        margin: 1px;
+        padding: 2px;
+    }
+
+    .table tr {
+        height: fit-content;
+    }
+
+    .table-race {
+        padding: 1px;
+        margin: 2px;
+    }
+
+    .table-race tr {
+        height: fit-content;
+    }
+
+    .table-race th {
+        padding: 4px;
+    }
+
+    .race-th th,
+    .subtitle-details th {
+        font-size: 13px;
+    }
+
+    .table-race td {
+        padding: 3px 5px;
+        font-size: 13px;
+    }
+
+    .title-small-race th {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .logo {
+        border: none;
+        display: flex;
+        align-items: center;
+        width: 15%;
+    }
+
+    .link-img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .flag-size {
+        width: 22px;
+        height: 22px;
+        padding-left: 3px;
+    }
+
+    /* details media query */
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .table-small-container {
+        width: 100%;
+        height: fit-content;
+        border-right: none;
+    }
+
+    .master {
+        flex-direction: row;
+    }
+
+    .master-race {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .image-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .table-small {
+        width: 100%;
+    }
+
+    .table-details,
+    .table-details-race {
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .table-details th,
+    .table-details-race th {
+        padding: 4px;
+    }
+
+    .table-details td,
+    .table-details-race td {
+        padding: 3px 5px;
+        font-size: 13px;
+    }
+
+    .table-details tr .table-details-race tr {
+        height: fit-content;
+    }
+
+    .img-div {
+        padding-right: 25px;
+        align-items: center;
+    }
+}
+
+/* media query max-width 715px */
+@media screen and (max-width:715px) {
+    .title {
+        font-size: 22px;
+        padding: 8px;
+    }
+
+    .title-small {
+        font-size: 13px;
+        padding: 2px;
+    }
+
+    .table td {
+        font-size: 11px;
+        padding: 1px;
+    }
+
+    .table tr {
+        height: fit-content;
+    }
+
+    .table-race tr {
+
+        height: fit-content;
+    }
+
+    .table-race th {
+        padding: 2px;
+    }
+
+    .race-th th,
+    .subtitle-details th {
+        font-size: 12px;
+    }
+
+    .table-race td {
+        padding: 3px 5px;
+        font-size: 12px;
+        height: fit-content;
+    }
+
+    .title-small-race th {
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .background {
+        margin: 0;
+        padding: 0 2px 2px 2px;
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .nav-link {
+        display: flex;
+    }
+
+    .nav-link a {
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+
+    .breadcrumb a {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .search {
+        font-size: 12px;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-right: none;
+        align-items: center;
+    }
+
+    .flag-size {
+        width: 20px;
+        height: 20px;
+        padding-left: 3px;
+    }
+
+    .link-img {
+        width: 10px;
+        height: 10px;
+    }
+
+/* details media query */
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .table-small-container {
+        width: 100%;
+        height: fit-content;
+        border-right: none;
+    }
+
+    .table-details th .table-details-race th {
+        padding: 2px;
+    }
+
+    .table-details td,
+    .table-details-race td {
+        padding: 1px;
+        font-size: 11px;
+    }
+
+    .table-details tr,
+    .table-details-race tr {
+        height: fit-content;
+    }
+
+    .img-div {
+        padding-right: 0;
+    }
+}
+
+/* media query max-width 615px */
+@media screen and (max-width:615px) {
+    .title {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .title-small {
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .table td {
+        font-size: 11px;
+        padding: 1px;
+    }
+
+    .table tr {
+        height: fit-content;
+    }
+
+    .table-race tr {
+        height: fit-content;
+    }
+
+    .table-race th {
+        padding: 2px;
+    }
+
+    .race-th th,
+    .subtitle-details th {
+        font-size: 11px;
+    }
+
+    .table-race td {
+        padding: 0;
+        font-size: 11px;
+    }
+
+    .title-small-race th {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .background {
+        margin: 0;
+        padding: 0 2px 2px 2px;
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        border-top: none;
+    }
+
+    .nav-link {
+        display: flex;
+    }
+
+    .nav-link a {
+        font-size: 12px;
+        padding: 4px 4px;
+    }
+
+    .devider-links {
+        justify-content: space-between;
+    }
+
+    .year-select {
+        width: 50px;
+        height: 16px;
+        font-size: 11px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo-img {
+        width: 110%;
+        margin-left: 1px;
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-right: none;
+        align-items: center;
+    }
+
+    .master {
+        flex-direction: column;
+    }
+
+    .flag-size {
+        width: 16px;
+        height: 16px;
+        padding-left: 2px;
+    }
+
+    .flag {
+        padding-right: 3px;
+    }
+
+    .link-img {
+        width: 9px;
+        height: 9px;
+    }
+
+    /* details media query */
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .table-small-container {
+        width: 100%;
+        height: fit-content;
+        border-right: none;
+    }
+
+    .table-details th,
+    .table-details-race th {
+        padding: 2px;
+    }
+
+    .table-details td,
+    .table-details-race td {
+        padding: 1px;
+        font-size: 11px;
+    }
+
+    .table-details tr,
+    .table-details-race tr {
+        height: fit-content;
+    }
+
+    .img-div {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .master-race {
+        flex-direction: column;
+    }
+
+    .flag-raceDetails {
+        border-bottom: 1px solid rgb(90, 90, 90);
+    }
+}
