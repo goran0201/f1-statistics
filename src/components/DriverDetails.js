@@ -137,7 +137,7 @@ export default class DriverDetails extends React.Component {
                           </th>
                         </tr>
                         <tr>
-                          <th>Country: </th>
+                          <th>Nationality: </th>
                           <td>{driverDetail.Driver.nationality}</td>
                         </tr>
                         <tr>

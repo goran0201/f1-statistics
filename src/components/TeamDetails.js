@@ -136,7 +136,7 @@ export default class TeamDetails extends React.Component {
                           </th>
                         </tr>
                         <tr>
-                          <th>Country: </th>
+                          <th>Nationality: </th>
                           <td>{details1.Constructor.nationality}</td>
                         </tr>
                         <tr>
