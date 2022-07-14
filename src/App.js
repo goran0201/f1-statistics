@@ -19,7 +19,6 @@ export default class App extends React.Component {
         super();
         const thisYear = new Date().getFullYear();
         localStorage.setItem("chosen", thisYear);
-        /*   let selectedYear = localStorage.getItem("chosen"); */
         this.state = {
             thisYear: thisYear,
             selectedYear: ""
